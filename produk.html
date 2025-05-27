@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - GamingStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>GamingStore</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Cari produk gaming...">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="produk.html" class="nav-link active">Produk</a></li>
+                <li><a href="pesanansaya.html" class="nav-link">Pesanan Saya</a></li>
+                <li><a href="keranjang.html" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    Keranjang
+                    <span class="cart-badge">3</span>
+                </a></li>
+                <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+                <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="products page" id="products">
+        <div class="container">
+            <h2 class="section-title">Koleksi Premium Gaming Equipment</h2>
+            
+            <!-- Filter Section -->
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="categoryFilter">Kategori:</label>
+                    <select id="categoryFilter">
+                        <option value="all">Semua Kategori</option>
+                        <option value="headset">Headset</option>
+                        <option value="keyboard">Keyboard</option>
+                        <option value="mouse">Mouse</option>
+                        <option value="gamepad">Gamepad</option>
+                        <option value="accessories">Aksesoris</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="priceFilter">Harga:</label>
+                    <select id="priceFilter">
+                        <option value="all">Semua Harga</option>
+                        <option value="low">Di bawah Rp 500.000</option>
+                        <option value="medium">Rp 500.000 - Rp 2.000.000</option>
+                        <option value="high">Di atas Rp 2.000.000</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sortFilter">Urutkan:</label>
+                    <select id="sortFilter">
+                        <option value="default">Default</option>
+                        <option value="price-low">Harga Terendah</option>
+                        <option value="price-high">Harga Tertinggi</option>
+                        <option value="name">Nama A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Headset Products -->
+                <div class="product-card" data-category="headset" data-price="425000" data-name="Rexus Thundervox HX20">
+                    <div class="product-image">
+                        <img src="https://d3uyff779abz3k.cloudfront.net/-btg-/images/480/04513-3-2.jpg" alt="Rexus Thundervox HX20" loading="lazy">
+                        <div class="product-badge">Hot Sale</div>
+                        <div class="product-overlay">
+                            <button class="btn btn-quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rexus Thundervox HX20</h3>
+                        <p class="product-description">Headset gaming dengan surround sound dan LED RGB. Nyaman untuk sesi gaming panjang.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-text">(4.5) 127 reviews</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">Rp 425.000</span>
+                        </div>
+                        <button class="btn btn-add-cart">
+                            <i class="fas fa-cart-plus"></i>
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Keyboard Products -->
+                <div class="product-card" data-category="keyboard" data-price="215000" data-name="Rexus KM9 Keyboard">
+                    <div class="product-image">
+                        <img src="https://rexus.id/cdn/shop/files/K65M_5.png?v=1716865045" alt="Rexus KM9 Keyboard" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn btn-quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rexus K65M Keyboard</h3>
+                        <p class="product-description">Keyboard membran dengan pencahayaan LED, fitur anti-ghosting, dan desain tahan air.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-text">(4.0) 89 reviews</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">Rp 215.000</span>
+                        </div>
+                        <button class="btn btn-add-cart">
+                            <i class="fas fa-cart-plus"></i>
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Continue with all other products... -->
+                <!-- Mouse Products -->
+                <div class="product-card" data-category="mouse" data-price="299000" data-name="Armageddon Foxbat Wireless">
+                    <div class="product-image">
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.Ecd7spuIcGsoDNiS3yhiKgHaFj&pid=Api&P=0&h=220" alt="Armageddon Foxbat" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn btn-quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>logitech g pro x superlight</h3>
+                        <p class="product-description">Logitech G PRO X SUPERLIGHT 2 LIGHTSPEED Wireless Mouse Gaming,Sensor HERO 2, 44K DPI, for eSport.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">(5.0) 234 reviews</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">Rp2.369.000</span>
+                        </div>
+                        <button class="btn btn-add-cart">
+                            <i class="fas fa-cart-plus"></i>
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Gamepad Products -->
+                <div class="product-card" data-category="gamepad" data-price="375000" data-name="Fantech WGP13 Shooter II">
+                    <div class="product-image">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.9K9g81QqBZGhmYpNa-CatgHaHa&pid=Api&P=0&h=220" alt="Fantech WGP13" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn btn-quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fantech WGP13 Shooter II</h3>
+                        <p class="product-description">Gamepad wireless serbaguna untuk PC, Android & PS3. Respons cepat dan nyaman di genggaman.</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-text">(4.2) 156 reviews</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">Rp 375.000</span>
+                        </div>
+                        <button class="btn btn-add-cart">
+                            <i class="fas fa-cart-plus"></i>
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- More products... -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn btn-outline" id="loadMoreBtn">
+                    <i class="fas fa-plus"></i>
+                    Muat Lebih Banyak
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>GamingStore</span>
+                    </div>
+                    <p>Destinasi utama untuk semua kebutuhan gaming Anda. Kualitas premium, harga terjangkau.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Produk</h3>
+                    <ul>
+                        <li><a href="#">Gaming PC</a></li>
+                        <li><a href="#">Keyboard</a></li>
+                        <li><a href="#">Mouse</a></li>
+                        <li><a href="#">Headset</a></li>
+                        <li><a href="#">Kursi Gaming</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="#">Bantuan</a></li>
+                        <li><a href="#">Garansi</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Pembayaran</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> banyu_pangestu@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +62 813 3779 9775</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Bali, Tabanan, kec.seltim</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GamingStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function () {
+            const keyword = this.value.toLowerCase();
+            const cards = document.querySelectorAll('.product-card');
+
+            cards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const desc = card.querySelector('.product-description').textContent.toLowerCase();
+                if (title.includes(keyword) || desc.includes(keyword)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Filter functionality
+        const categoryFilter = document.getElementById('categoryFilter');
+        const priceFilter = document.getElementById('priceFilter');
+        const sortFilter = document.getElementById('sortFilter');
+
+        function filterProducts() {
+            const cards = document.querySelectorAll('.product-card');
+            const categoryValue = categoryFilter.value;
+            const priceValue = priceFilter.value;
+
+            cards.forEach(card => {
+                let showCard = true;
+
+                // Category filter
+                if (categoryValue !== 'all' && card.dataset.category !== categoryValue) {
+                    showCard = false;
+                }
+
+                // Price filter
+                if (priceValue !== 'all') {
+                    const price = parseInt(card.dataset.price);
+                    if (priceValue === 'low' && price >= 500000) showCard = false;
+                    if (priceValue === 'medium' && (price < 500000 || price > 2000000)) showCard = false;
+                    if (priceValue === 'high' && price <= 2000000) showCard = false;
+                }
+
+                card.style.display = showCard ? 'block' : 'none';
+            });
+        }
+
+        categoryFilter.addEventListener('change', filterProducts);
+        priceFilter.addEventListener('change', filterProducts);
+
+        // Add to cart animation
+        document.querySelectorAll('.btn-add-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                this.innerHTML = '<i class="fas fa-check"></i> Ditambahkan!';
+                this.classList.add('added');
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-cart-plus"></i> Tambah ke Keranjang';
+                    this.classList.remove('added');
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>

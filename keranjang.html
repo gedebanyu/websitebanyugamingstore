@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja - GamingStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>GamingStore</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="produk.html" class="nav-link">Produk</a></li>
+                <li><a href="pesanansaya.html" class="nav-link">Pesanan Saya</a></li>
+                <li><a href="keranjang.html" class="nav-link active">
+                    <i class="fas fa-shopping-cart"></i>
+                    Keranjang
+                    <span class="cart-badge">3</span>
+                </a></li>
+                <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+                <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="cart" id="cart">
+        <div class="container">
+            <h2 class="section-title">Keranjang Belanja</h2>
+
+            <!-- Cart Items Container -->
+            <div class="cart-container">
+                <!-- Cart Items Table -->
+                <div class="cart-items-section">
+                    <div class="cart-header">
+                        <h3><i class="fas fa-shopping-bag"></i> Item dalam Keranjang (3)</h3>
+                        <button class="btn-clear-all">
+                            <i class="fas fa-trash-alt"></i>
+                            Kosongkan Keranjang
+                        </button>
+                    </div>
+
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="https://pixabay.com/get/g8755620fb3d5c80b1b2a38282548cbefd317934c8d63943aa85410d778b8f8ea413228234f5f8a7608010c8e6cf1f8c989730170912d76c0d68a2159e24d8f51_1280.jpg" alt="Keyboard Gaming RGB" loading="lazy">
+                        </div>
+                        <div class="item-details">
+                            <h4>Keyboard Gaming RGB Mechanical</h4>
+                            <p class="item-description">Keyboard mechanical dengan switch blue, RGB lighting, dan build quality premium</p>
+                            <div class="item-features">
+                                <span class="feature-tag">RGB Lighting</span>
+                                <span class="feature-tag">Mechanical Switch</span>
+                                <span class="feature-tag">Anti-Ghosting</span>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <label>Jumlah:</label>
+                            <div class="quantity-controls">
+                                <button class="qty-btn minus" data-action="decrease">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="number" value="1" min="1" max="10" class="quantity-input">
+                                <button class="qty-btn plus" data-action="increase">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <span class="price-label">Harga:</span>
+                            <span class="price-value">Rp 750.000</span>
+                            <span class="total-label">Total:</span>
+                            <span class="total-value">Rp 750.000</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="btn-save-later">
+                                <i class="fas fa-heart"></i>
+                                Simpan Nanti
+                            </button>
+                            <button class="btn-remove">
+                                <i class="fas fa-trash"></i>
+                                Hapus
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="https://pixabay.com/get/gc077ec848d105d14153c50ea28280a2e3ba37b6dc6a13d63eae0219ba134730f29f20b7edc9f0e76399121b63962e8d73a9d22cae7e629dcb8104692dc72b498_1280.jpg" alt="Gaming Mouse" loading="lazy">
+                        </div>
+                        <div class="item-details">
+                            <h4>Gaming Mouse Pro Wireless</h4>
+                            <p class="item-description">Mouse gaming wireless dengan sensor premium, DPI hingga 25600, dan battery life 70 jam</p>
+                            <div class="item-features">
+                                <span class="feature-tag">Wireless</span>
+                                <span class="feature-tag">25600 DPI</span>
+                                <span class="feature-tag">70h Battery</span>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <label>Jumlah:</label>
+                            <div class="quantity-controls">
+                                <button class="qty-btn minus" data-action="decrease">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="number" value="2" min="1" max="10" class="quantity-input">
+                                <button class="qty-btn plus" data-action="increase">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <span class="price-label">Harga:</span>
+                            <span class="price-value">Rp 450.000</span>
+                            <span class="total-label">Total:</span>
+                            <span class="total-value">Rp 900.000</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="btn-save-later">
+                                <i class="fas fa-heart"></i>
+                                Simpan Nanti
+                            </button>
+                            <button class="btn-remove">
+                                <i class="fas fa-trash"></i>
+                                Hapus
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="https://pixabay.com/get/g266aed65df853e521bb58512aeb8f6bb25d233659a8a8a20fde9577a6c48447e99407bc21b3b0a3c7288309e7d06fd26ca415d1da7eb80865516791b250a51e3_1280.jpg" alt="Gaming Headset" loading="lazy">
+                        </div>
+                        <div class="item-details">
+                            <h4>Gaming Headset Premium 7.1</h4>
+                            <p class="item-description">Headset gaming dengan surround sound 7.1, noise cancelling, dan microphone detachable</p>
+                            <div class="item-features">
+                                <span class="feature-tag">7.1 Surround</span>
+                                <span class="feature-tag">Noise Cancelling</span>
+                                <span class="feature-tag">Detachable Mic</span>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <label>Jumlah:</label>
+                            <div class="quantity-controls">
+                                <button class="qty-btn minus" data-action="decrease">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="number" value="1" min="1" max="10" class="quantity-input">
+                                <button class="qty-btn plus" data-action="increase">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <span class="price-label">Harga:</span>
+                            <span class="price-value">Rp 850.000</span>
+                            <span class="total-label">Total:</span>
+                            <span class="total-value">Rp 850.000</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="btn-save-later">
+                                <i class="fas fa-heart"></i>
+                                Simpan Nanti
+                            </button>
+                            <button class="btn-remove">
+                                <i class="fas fa-trash"></i>
+                                Hapus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary-section">
+                    <div class="summary-card">
+                        <h3><i class="fas fa-calculator"></i> Ringkasan Pesanan</h3>
+                        
+                        <div class="summary-row">
+                            <span>Subtotal (4 item)</span>
+                            <span>Rp 2.500.000</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>Biaya Pengiriman</span>
+                            <span class="free-shipping">GRATIS</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>Biaya Layanan</span>
+                            <span>Rp 5.000</span>
+                        </div>
+                        
+                        <div class="summary-row discount">
+                            <span>Diskon Member</span>
+                            <span>-Rp 125.000</span>
+                        </div>
+                        
+                        <hr class="summary-divider">
+                        
+                        <div class="summary-total">
+                            <span>Total Pembayaran</span>
+                            <span>Rp 2.380.000</span>
+                        </div>
+                        
+                        <!-- Promo Code -->
+                        <div class="promo-section">
+                            <h4>Kode Promo</h4>
+                            <div class="promo-input-group">
+                                <input type="text" placeholder="Masukkan kode promo" class="promo-input">
+                                <button class="btn-apply-promo">Terapkan</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Checkout Button -->
+                        <button class="btn-checkout">
+                            <i class="fas fa-credit-card"></i>
+                            Lanjut ke Pembayaran
+                        </button>
+                        
+                        <!-- Payment Methods -->
+                        <div class="payment-methods">
+                            <p>Metode Pembayaran:</p>
+                            <div class="payment-icons">
+                                <i class="fab fa-cc-visa" title="Visa"></i>
+                                <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                                <i class="fas fa-university" title="Transfer Bank"></i>
+                                <i class="fas fa-wallet" title="E-Wallet"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Security Notice -->
+                        <div class="security-notice">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Transaksi Anda dilindungi dengan enkripsi SSL</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Recommended Products -->
+                    <div class="recommendations-card">
+                        <h4><i class="fas fa-star"></i> Rekomendasi Untuk Anda</h4>
+                        <div class="recommended-item">
+                            <img src="https://pixabay.com/get/g27ad8f25889a71f1de6fbd50558949ce00884a8cb75dcf065cb1231e8242b5c9c72a61e579d93a4bf0d9ac465e9a45ad396e7ca81d68d61794d2900e6346f7c2_1280.jpg" alt="Gaming Mousepad" loading="lazy">
+                            <div class="recommended-details">
+                                <h5>Gaming Mousepad XL</h5>
+                                <p>Rp 150.000</p>
+                            </div>
+                            <button class="btn-add-recommended">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="recommended-item">
+                            <img src="https://pixabay.com/get/gd22c43c683efdded73276126f6bedaebf7660560d93917969e2c50658c939707fa9fb920c8c473c8dc204f0a4fab722ee3ea501fb4b99b8d65cc968ba1c5e573_1280.jpg" alt="Gaming Speaker" loading="lazy">
+                            <div class="recommended-details">
+                                <h5>Gaming Speaker 2.1</h5>
+                                <p>Rp 300.000</p>
+                            </div>
+                            <button class="btn-add-recommended">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Continue Shopping -->
+            <div class="continue-shopping">
+                <a href="produk.html" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i>
+                    Lanjut Belanja
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>GamingStore</span>
+                    </div>
+                    <p>Destinasi utama untuk semua kebutuhan gaming Anda. Kualitas premium, harga terjangkau.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Produk</h3>
+                    <ul>
+                        <li><a href="#">Gaming PC</a></li>
+                        <li><a href="#">Keyboard</a></li>
+                        <li><a href="#">Mouse</a></li>
+                        <li><a href="#">Headset</a></li>
+                        <li><a href="#">Kursi Gaming</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="#">Bantuan</a></li>
+                        <li><a href="#">Garansi</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Pembayaran</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> banyu_pangestu@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +62 813 3779 9775</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Bali, Tabanan, kec.seltim </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GamingStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Quantity controls
+        document.querySelectorAll('.qty-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const input = this.parentElement.querySelector('.quantity-input');
+                const action = this.dataset.action;
+                let value = parseInt(input.value);
+
+                if (action === 'increase' && value < 10) {
+                    input.value = value + 1;
+                } else if (action === 'decrease' && value > 1) {
+                    input.value = value - 1;
+                }
+                
+                // Update total price (you can add actual calculation here)
+                updateItemTotal(this.closest('.cart-item'));
+            });
+        });
+
+        function updateItemTotal(item) {
+            // Add logic to update item total based on quantity
+            console.log('Updating total for item:', item);
+        }
+
+        // Remove item
+        document.querySelectorAll('.btn-remove').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (confirm('Apakah Anda yakin ingin menghapus item ini?')) {
+                    this.closest('.cart-item').remove();
+                    // Update cart summary
+                }
+            });
+        });
+
+        // Apply promo code
+        document.querySelector('.btn-apply-promo').addEventListener('click', function() {
+            const promoInput = document.querySelector('.promo-input');
+            const promoCode = promoInput.value.trim();
+            
+            if (promoCode) {
+                // Add promo code validation logic here
+                alert('Kode promo berhasil diterapkan!');
+                promoInput.value = '';
+            }
+        });
+    </script>
+</body>
+</html>

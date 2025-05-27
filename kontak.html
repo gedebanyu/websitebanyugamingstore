@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - GamingStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>GamingStore</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="produk.html" class="nav-link">Produk</a></li>
+                <li><a href="pesanansaya.html" class="nav-link">Pesanan Saya</a></li>
+                <li><a href="keranjang.html" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    Keranjang
+                    <span class="cart-badge">3</span>
+                </a></li>
+                <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+                <li><a href="kontak.html" class="nav-link active">Kontak</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-background">
+            <div class="hero-image"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Hubungi Kami</h1>
+            <p>Kami siap membantu Anda dengan pertanyaan, masukan, atau dukungan teknis yang Anda butuhkan. Tim customer service kami berpengalaman dalam produk gaming dan siap memberikan solusi terbaik.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <!-- Contact Information -->
+            <div class="contact-info-section">
+                <h2 class="section-title">Informasi Kontak</h2>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Alamat Kantor</h3>
+                            <p>Jl. Gaming Raya No. 123<br>Bali, Kab.tabanan, kec.seltim<br>Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>
+                                <a href="mailto:banyu_pangestu@gmail.com">banyu_pangestu@gmail.com</a><br>
+                                <a href="mailto:support@gamingstore.com">support@gamingstore.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telepon</h3>
+                            <p>
+                                <a href="tel:+622112345678">+62 813 3779 9775</a><br>
+                                <span class="phone-note">Customer Service</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Jam Operasional</h3>
+                            <p>
+                                Senin - Jumat: 09:00 - 18:00 WIB<br>
+                                Sabtu: 09:00 - 17:00 WIB<br>
+                                Minggu: 10:00 - 16:00 WIB
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form and Map Section -->
+            <div class="contact-main-section">
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h2><i class="fas fa-paper-plane"></i> Kirim Pesan</h2>
+                        <p>Punya pertanyaan atau butuh bantuan? Jangan ragu untuk menghubungi kami. Tim support kami akan merespons dalam 24 jam.</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Nama Depan *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nama Belakang *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subjek *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Pilih subjek pesan...</option>
+                                <option value="product-inquiry">Pertanyaan Produk</option>
+                                <option value="order-support">Bantuan Pesanan</option>
+                                <option value="technical-support">Dukungan Teknis</option>
+                                <option value="warranty">Klaim Garansi</option>
+                                <option value="partnership">Kerjasama & Partnership</option>
+                                <option value="feedback">Saran & Masukan</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderNumber">Nomor Pesanan (opsional)</label>
+                            <input type="text" id="orderNumber" name="orderNumber" placeholder="Contoh: GS-001-2025">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Pesan *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Ya, saya ingin menerima update produk dan promo menarik via email</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Saya setuju dengan <a href="#" target="_blank">Kebijakan Privasi</a> dan <a href="#" target="_blank">Syarat & Ketentuan</a> *</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span class="btn-text">Kirim Pesan</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Mengirim...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Map and Additional Info -->
+                <div class="map-info-container">
+                    <div class="map-section">
+                        <h3><i class="fas fa-map"></i> Lokasi Kami</h3>
+                        <div class="map-placeholder">
+                            <div class="map-content">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h4>GamingStore HQ</h4>
+                                <p>Jl. Gilimanuk denpasar<br>selemadeg timur,tabanan,bali</p>
+                                <button class="btn btn-outline map-btn">
+                                    <i class="fas fa-directions"></i>
+                                    Buka di Google Maps
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="faq-section">
+                        <h3><i class="fas fa-question-circle"></i> Pertanyaan Umum</h3>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>Berapa lama respon customer service?</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Tim customer service kami merespons dalam 2-4 jam pada jam kerja, dan maksimal 24 jam di luar jam kerja.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>Bagaimana cara melacak pesanan?</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Anda dapat melacak pesanan melalui halaman "Pesanan Saya" atau menggunakan nomor resi yang dikirim via email dan WhatsApp.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>Apakah ada garansi untuk semua produk?</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Ya, semua produk gaming yang kami jual memiliki garansi resmi sesuai dengan kebijakan masing-masing brand/manufacturer.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>Metode pembayaran apa saja yang tersedia?</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Kami menerima transfer bank, kartu kredit/debit, e-wallet (OVO, GoPay, DANA), dan cicilan 0% untuk pembelian tertentu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alternative Contact Methods -->
+            <div class="alternative-contact">
+                <h2 class="section-title">Cara Lain Menghubungi Kami</h2>
+                <div class="alternative-methods">
+                    <div class="method-card">
+                        <div class="method-icon whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Chat langsung untuk respon cepat</p>
+                        <a href="https://wa.me/6281234567890" class="btn btn-outline" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Chat WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-icon telegram">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h3>Telegram</h3>
+                        <p>Support 24/7 via bot otomatis</p>
+                        <a href="https://t.me/gamingstore_support" class="btn btn-outline" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                            Chat Telegram
+                        </a>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-icon live-chat">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Live Chat</h3>
+                        <p>Chat real-time di website</p>
+                        <button class="btn btn-outline" id="liveChatBtn">
+                            <i class="fas fa-comments"></i>
+                            Mulai Live Chat
+                        </button>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-icon video-call">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Call</h3>
+                        <p>Konsultasi produk via video</p>
+                        <button class="btn btn-outline" id="videoCallBtn">
+                            <i class="fas fa-video"></i>
+                            Jadwalkan Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="social-section">
+                <h2 class="section-title">Ikuti Kami</h2>
+                <p class="section-subtitle">Dapatkan update terbaru, tips gaming, dan promo eksklusif melalui media sosial kami</p>
+                
+                <div class="social-grid">
+                    <a href="#" class="social-card facebook" target="_blank">
+                        <div class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>Facebook</h3>
+                            <p>@GamingStoreID</p>
+                            <span class="followers">25K followers</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="social-card instagram" target="_blank">
+                        <div class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>Instagram</h3>
+                            <p>@gamingstore.id</p>
+                            <span class="followers">45K followers</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="social-card twitter" target="_blank">
+                        <div class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>Twitter</h3>
+                            <p>@GamingStoreID</p>
+                            <span class="followers">18K followers</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="social-card youtube" target="_blank">
+                        <div class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>YouTube</h3>
+                            <p>GamingStore Indonesia</p>
+                            <span class="followers">35K subscribers</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="social-card tiktok" target="_blank">
+                        <div class="social-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>TikTok</h3>
+                            <p>@gamingstore.id</p>
+                            <span class="followers">28K followers</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="social-card discord" target="_blank">
+                        <div class="social-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>Discord</h3>
+                            <p>GamingStore Community</p>
+                            <span class="followers">12K members</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>GamingStore</span>
+                    </div>
+                    <p>Destinasi utama untuk semua kebutuhan gaming Anda. Kualitas premium, harga terjangkau.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Produk</h3>
+                    <ul>
+                        <li><a href="#">Gaming PC</a></li>
+                        <li><a href="#">Keyboard</a></li>
+                        <li><a href="#">Mouse</a></li>
+                        <li><a href="#">Headset</a></li>
+                        <li><a href="#">Kursi Gaming</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="#">Bantuan</a></li>
+                        <li><a href="#">Garansi</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Pembayaran</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> banyu_pangestu@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +62 813 3779 9775</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Bali, Tabanan, kec.seltim </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GamingStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileToggle.classList.toggle('active');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('.submit-btn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoading = submitBtn.querySelector('.btn-loading');
+            
+            // Show loading state
+            btnText.style.display = 'none';
+            btnLoading.style.display = 'flex';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                alert('Terima kasih! Pesan Anda telah terkirim. Tim kami akan merespons dalam 24 jam.');
+                
+                // Reset form
+                this.reset();
+                
+                // Reset button
+                btnText.style.display = 'flex';
+                btnLoading.style.display = 'none';
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+
+        // FAQ toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.closest('.faq-item');
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = question.querySelector('i');
+                
+                // Toggle active state
+                faqItem.classList.toggle('active');
+                
+                // Toggle icon
+                if (faqItem.classList.contains('active')) {
+                    icon.style.transform = 'rotate(180deg)';
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                } else {
+                    icon.style.transform = 'rotate(0deg)';
+                    answer.style.maxHeight = '0';
+                }
+            });
+        });
+
+        // Map button
+        document.querySelector('.map-btn').addEventListener('click', () => {
+            const address = 'Jl. Gaming Raya No. 123, Kemang, Jakarta Selatan';
+            const encodedAddress = encodeURIComponent(address);
+            window.open(`https://maps.google.com/?q=${encodedAddress}`, '_blank');
+        });
+
+        // Live chat button
+        document.getElementById('liveChatBtn').addEventListener('click', () => {
+            alert('Fitur live chat akan segera tersedia! Sementara ini, Anda dapat menghubungi kami via WhatsApp.');
+        });
+
+        // Video call button
+        document.getElementById('videoCallBtn').addEventListener('click', () => {
+            alert('Untuk menjadwalkan video call, silakan hubungi customer service kami terlebih dahulu.');
+        });
+
+        // Form validation enhancement
+        const inputs = document.querySelectorAll('input, select, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('blur', validateField);
+            input.addEventListener('input', clearValidation);
+        });
+
+        function validateField(e) {
+            const field = e.target;
+            const value = field.value.trim();
+            
+            // Remove existing error
+            clearValidation(e);
+            
+            if (field.required && !value) {
+                showError(field, 'Field ini wajib diisi');
+                return false;
+            }
+            
+            if (field.type === 'email' && value) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(value)) {
+                    showError(field, 'Format email tidak valid');
+                    return false;
+                }
+            }
+            
+            if (field.type === 'tel' && value) {
+                const phoneRegex = /^[\+]?[0-9\s\-\(\)]{10,}$/;
+                if (!phoneRegex.test(value)) {
+                    showError(field, 'Format nomor telepon tidak valid');
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+
+        function showError(field, message) {
+            const formGroup = field.closest('.form-group');
+            let errorElement = formGroup.querySelector('.error-message');
+            
+            if (!errorElement) {
+                errorElement = document.createElement('div');
+                errorElement.className = 'error-message';
+                formGroup.appendChild(errorElement);
+            }
+            
+            errorElement.textContent = message;
+            field.classList.add('error');
+        }
+
+        function clearValidation(e) {
+            const field = e.target;
+            const formGroup = field.closest('.form-group');
+            const errorElement = formGroup.querySelector('.error-message');
+            
+            if (errorElement) {
+                errorElement.remove();
+            }
+            field.classList.remove('error');
+        }
+
+        // Character counter for textarea
+        const messageTextarea = document.getElementById('message');
+        const maxLength = 1000;
+        
+        // Create character counter
+        const charCounter = document.createElement('div');
+        charCounter.className = 'char-counter';
+        charCounter.textContent = `0/${maxLength}`;
+        messageTextarea.parentElement.appendChild(charCounter);
+
+        messageTextarea.addEventListener('input', function() {
+            const currentLength = this.value.length;
+            charCounter.textContent = `${currentLength}/${maxLength}`;
+            
+            if (currentLength > maxLength * 0.9) {
+                charCounter.style.color = 'hsl(var(--warning))';
+            } else {
+                charCounter.style.color = 'hsl(var(--text-light))';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <style>
+        /* Additional styles for contact page */
+        .contact-hero {
+            position: relative;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .contact-hero .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .contact-hero .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://pixabay.com/get/gd22c43c683efdded73276126f6bedaebf7660560d93917969e2c50658c939707fa9fb920c8c473c8dc204f0a4fab722ee3ea501fb4b99b8d65cc968ba1c5e573_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .contact-hero .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, hsl(var(--primary) / 0.8), hsl(var(--secondary) / 0.7));
+        }
+
+        .contact-hero .hero-content {
+            position: relative;
+            z-index: 2;
+            color: hsl(var(--text-white));
+            max-width: 700px;
+            padding: 0 var(--space-4);
+        }
+
+        .contact-hero h1 {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+        }
+
+        .contact-hero p {
+            font-size: var(--font-size-lg);
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .contact-info-section {
+            padding: var(--space-20) 0 var(--space-12);
+        }
+
+        .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-6);
+            margin-top: var(--space-12);
+        }
+
+        .contact-card {
+            display: flex;
+            gap: var(--space-4);
+            padding: var(--space-6);
+            background-color: hsl(var(--surface));
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-base);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: var(--radius-full);
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-xl);
+            color: hsl(var(--text-white));
+            flex-shrink: 0;
+        }
+
+        .contact-details h3 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            color: hsl(var(--text));
+            margin-bottom: var(--space-2);
+        }
+
+        .contact-details p {
+            color: hsl(var(--text-light));
+            line-height: 1.6;
+        }
+
+        .contact-details a {
+            color: hsl(var(--primary));
+            text-decoration: none;
+            transition: color var(--transition-base);
+        }
+
+        .contact-details a:hover {
+            color: hsl(var(--primary-hover));
+            text-decoration: underline;
+        }
+
+        .phone-note {
+            font-size: var(--font-size-sm);
+            color: hsl(var(--text-light));
+        }
+
+        .contact-main-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var(--space-12);
+            padding: var(--space-12) 0;
+        }
+
+        .contact-form-container {
+            background-color: hsl(var(--surface));
+            border-radius: var(--radius-2xl);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-header {
+            margin-bottom: var(--space-8);
+        }
+
+        .form-header h2 {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            font-size: var(--font-size-2xl);
+            color: hsl(var(--text));
+            margin-bottom: var(--space-3);
+        }
+
+        .form-header p {
+            color: hsl(var(--text-light));
+            line-height: 1.6;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-4);
+        }
+
+        .form-group {
+            margin-bottom: var(--space-5);
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: hsl(var(--text));
+            margin-bottom: var(--space-2);
+            font-size: var(--font-size-sm);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: var(--space-4);
+            border: 1px solid hsl(var(--border));
+            border-radius: var(--radius-lg);
+            font-size: var(--font-size-base);
+            font-family: var(--font-primary);
+            transition: all var(--transition-base);
+            background-color: hsl(var(--surface-light));
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: hsl(var(--primary));
+            box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1);
+            background-color: hsl(var(--surface));
+        }
+
+        .form-group input.error,
+        .form-group select.error,
+        .form-group textarea.error {
+            border-color: hsl(var(--error));
+            box-shadow: 0 0 0 3px hsl(var(--error) / 0.1);
+        }
+
+        .checkbox-group {
+            margin-bottom: var(--space-6);
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-3);
+            cursor: pointer;
+            font-weight: 400;
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkmark {
+            width: 20px;
+            height: 20px;
+            border: 2px solid hsl(var(--border));
+            border-radius: var(--radius-sm);
+            background-color: hsl(var(--surface));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-base);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .checkbox-label input[type="checkbox"]:checked + .checkmark {
+            background-color: hsl(var(--primary));
+            border-color: hsl(var(--primary));
+        }
+
+        .checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+            content: '\2713';
+            color: hsl(var(--text-white));
+            font-weight: bold;
+            font-size: var(--font-size-sm);
+        }
+
+        .checkbox-text {
+            font-size: var(--font-size-sm);
+            line-height: 1.5;
+        }
+
+        .checkbox-text a {
+            color: hsl(var(--primary));
+            text-decoration: none;
+        }
+
+        .checkbox-text a:hover {
+            text-decoration: underline;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: var(--space-4) var(--space-6);
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+        }
+
+        .submit-btn .btn-text,
+        .submit-btn .btn-loading {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            justify-content: center;
+        }
+
+        .error-message {
+            color: hsl(var(--error));
+            font-size: var(--font-size-xs);
+            margin-top: var(--space-1);
+            display: flex;
+            align-items: center;
+            gap: var(--space-1);
+        }
+
+        .error-message::before {
+            content: '\26A0';
+        }
+
+        .char-counter {
+            text-align: right;
+            font-size: var(--font-size-xs);
+            color: hsl(var(--text-light));
+            margin-top: var(--space-1);
+        }
+
+        .map-info-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-6);
+        }
+
+        .map-section,
+        .faq-section {
+            background-color: hsl(var(--surface));
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            box-shadow: var(--shadow-md);
+        }
+
+        .map-section h3,
+        .faq-section h3 {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--font-size-lg);
+            color: hsl(var(--text));
+            margin-bottom: var(--space-4);
+        }
+
+        .map-placeholder {
+            background-color: hsl(var(--surface-light));
+            border-radius: var(--radius-lg);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed hsl(var(--border));
+        }
+
+        .map-content {
+            text-align: center;
+            color: hsl(var(--text-light));
+        }
+
+        .map-content i {
+            font-size: var(--font-size-3xl);
+            color: hsl(var(--primary));
+            margin-bottom: var(--space-3);
+        }
+
+        .map-content h4 {
+            color: hsl(var(--text));
+            margin-bottom: var(--space-2);
+        }
+
+        .map-content p {
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--space-4);
+        }
+
+        .map-btn {
+            font-size: var(--font-size-sm);
+            padding: var(--space-2) var(--space-4);
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-3);
+        }
+
+        .faq-item {
+            border: 1px solid hsl(var(--border));
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: all var(--transition-base);
+        }
+
+        .faq-item:hover {
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-4);
+            cursor: pointer;
+            background-color: hsl(var(--surface-light));
+            transition: background-color var(--transition-base);
+        }
+
+        .faq-question:hover {
+            background-color: hsl(var(--primary) / 0.05);
+        }
+
+        .faq-question h4 {
+            font-size: var(--font-size-base);
+            color: hsl(var(--text));
+            margin: 0;
+        }
+
+        .faq-question i {
+            color: hsl(var(--text-light));
+            transition: transform var(--transition-base);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-base);
+        }
+
+        .faq-answer p {
+            padding: var(--space-4);
+            margin: 0;
+            color: hsl(var(--text-light));
+            line-height: 1.6;
+        }
+
+        .alternative-contact {
+            padding: var(--space-20) 0;
+            background-color: hsl(var(--surface-light));
+        }
+
+        .alternative-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+            margin-top: var(--space-12);
+        }
+
+        .method-card {
+            text-align: center;
+            background-color: hsl(var(--surface));
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-base);
+        }
+
+        .method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .method-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-4);
+            font-size: var(--font-size-2xl);
+            color: hsl(var(--text-white));
+        }
+
+        .method-icon.whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+        }
+
+        .method-icon.telegram {
+            background: linear-gradient(135deg, #0088cc, #005577);
+        }
+
+        .method-icon.live-chat {
+            background: var(--gradient-primary);
+        }
+
+        .method-icon.video-call {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
+        }
+
+        .method-card h3 {
+            font-size: var(--font-size-lg);
+            color: hsl(var(--text));
+            margin-bottom: var(--space-2);
+        }
+
+        .method-card p {
+            color: hsl(var(--text-light));
+            margin-bottom: var(--space-6);
+        }
+
+        .social-section {
+            padding: var(--space-20) 0;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: var(--font-size-lg);
+            color: hsl(var(--text-light));
+            margin-bottom: var(--space-12);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-6);
+            margin-top: var(--space-12);
+        }
+
+        .social-card {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+            padding: var(--space-6);
+            background-color: hsl(var(--surface));
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-md);
+            text-decoration: none;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+
+        .social-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .social-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .social-card.facebook::before {
+            background: #1877F2;
+        }
+
+        .social-card.instagram::before {
+            background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF);
+        }
+
+        .social-card.twitter::before {
+            background: #1DA1F2;
+        }
+
+        .social-card.youtube::before {
+            background: #FF0000;
+        }
+
+        .social-card.tiktok::before {
+            background: #000000;
+        }
+
+        .social-card.discord::before {
+            background: #5865F2;
+        }
+
+        .social-card .social-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-xl);
+            color: hsl(var(--text-white));
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .social-card.facebook .social-icon {
+            background: #1877F2;
+        }
+
+        .social-card.instagram .social-icon {
+            background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF);
+        }
+
+        .social-card.twitter .social-icon {
+            background: #1DA1F2;
+        }
+
+        .social-card.youtube .social-icon {
+            background: #FF0000;
+        }
+
+        .social-card.tiktok .social-icon {
+            background: #000000;
+        }
+
+        .social-card.discord .social-icon {
+            background: #5865F2;
+        }
+
+        .social-info {
+            position: relative;
+            z-index: 1;
+        }
+
+        .social-info h3 {
+            font-size: var(--font-size-lg);
+            color: hsl(var(--text));
+            margin-bottom: var(--space-1);
+        }
+
+        .social-info p {
+            color: hsl(var(--text-light));
+            margin-bottom: var(--space-1);
+        }
+
+        .followers {
+            font-size: var(--font-size-sm);
+            color: hsl(var(--primary));
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .contact-hero h1 {
+                font-size: var(--font-size-3xl);
+            }
+
+            .contact-main-section {
+                grid-template-columns: 1fr;
+                gap: var(--space-8);
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .alternative-methods {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .social-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-hero {
+                height: 40vh;
+            }
+
+            .contact-hero h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            .alternative-methods {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .social-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</body>
+</html>

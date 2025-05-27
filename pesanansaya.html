@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Saya - GamingStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>GamingStore</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="produk.html" class="nav-link">Produk</a></li>
+                <li><a href="pesanansaya.html" class="nav-link active">Pesanan Saya</a></li>
+                <li><a href="keranjang.html" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    Keranjang
+                    <span class="cart-badge">3</span>
+                </a></li>
+                <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+                <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Orders Section -->
+    <section class="orders" id="orders">
+        <div class="container">
+            <h2 class="section-title">Pesanan Saya</h2>
+
+            <!-- Order Filters -->
+            <div class="order-filters">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-status="all">
+                        <i class="fas fa-list"></i>
+                        Semua Pesanan
+                    </button>
+                    <button class="filter-tab" data-status="pending">
+                        <i class="fas fa-clock"></i>
+                        Menunggu Pembayaran
+                    </button>
+                    <button class="filter-tab" data-status="processing">
+                        <i class="fas fa-cog"></i>
+                        Diproses
+                    </button>
+                    <button class="filter-tab" data-status="shipped">
+                        <i class="fas fa-truck"></i>
+                        Dikirim
+                    </button>
+                    <button class="filter-tab" data-status="delivered">
+                        <i class="fas fa-check-circle"></i>
+                        Selesai
+                    </button>
+                </div>
+                
+                <div class="search-orders">
+                    <input type="text" placeholder="Cari pesanan..." id="orderSearch">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <!-- Orders List -->
+            <div class="orders-list">
+                <!-- Order 1 - Shipped -->
+                <div class="order-card" data-status="shipped" data-order="GS-001-2025">
+                    <div class="order-header">
+                        <div class="order-info">
+                            <h3><i class="fas fa-receipt"></i> Order #GS-001-2025</h3>
+                            <div class="order-meta">
+                                <span class="order-date">
+                                    <i class="fas fa-calendar"></i>
+                                    20 Januari 2025
+                                </span>
+                                <span class="order-status shipped">
+                                    <i class="fas fa-truck"></i>
+                                    Dalam Pengiriman
+                                </span>
+                            </div>
+                        </div>
+                        <div class="order-total">
+                            <span class="total-label">Total</span>
+                            <span class="total-amount">Rp 3.250.000</span>
+                        </div>
+                    </div>
+
+                    <div class="order-items">
+                        <div class="order-item">
+                            <img src="https://pixabay.com/get/g8755620fb3d5c80b1b2a38282548cbefd317934c8d63943aa85410d778b8f8ea413228234f5f8a7608010c8e6cf1f8c989730170912d76c0d68a2159e24d8f51_1280.jpg" alt="Keyboard Gaming" loading="lazy">
+                            <div class="item-details">
+                                <h4>Keyboard Gaming RGB Mechanical</h4>
+                                <p>Qty: 1 × Rp 750.000</p>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <img src="https://pixabay.com/get/gc077ec848d105d14153c50ea28280a2e3ba37b6dc6a13d63eae0219ba134730f29f20b7edc9f0e76399121b63962e8d73a9d22cae7e629dcb8104692dc72b498_1280.jpg" alt="Gaming Mouse" loading="lazy">
+                            <div class="item-details">
+                                <h4>Gaming Mouse Pro Wireless</h4>
+                                <p>Qty: 1 × Rp 450.000</p>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <img src="https://pixabay.com/get/g266aed65df853e521bb58512aeb8f6bb25d233659a8a8a20fde9577a6c48447e99407bc21b3b0a3c7288309e7d06fd26ca415d1da7eb80865516791b250a51e3_1280.jpg" alt="Gaming Headset" loading="lazy">
+                            <div class="item-details">
+                                <h4>Gaming Headset Premium 7.1</h4>
+                                <p>Qty: 1 × Rp 850.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tracking-info">
+                        <div class="tracking-header">
+                            <h4><i class="fas fa-map-marker-alt"></i> Info Pengiriman</h4>
+                            <span class="tracking-number">Resi: JNE123456789</span>
+                        </div>
+                        <div class="tracking-progress">
+                            <div class="progress-step completed">
+                                <div class="step-icon"><i class="fas fa-check"></i></div>
+                                <div class="step-info">
+                                    <h5>Pesanan Dikonfirmasi</h5>
+                                    <p>20 Jan 2025, 10:30</p>
+                                </div>
+                            </div>
+                            <div class="progress-step completed">
+                                <div class="step-icon"><i class="fas fa-check"></i></div>
+                                <div class="step-info">
+                                    <h5>Sedang Diproses</h5>
+                                    <p>20 Jan 2025, 14:00</p>
+                                </div>
+                            </div>
+                            <div class="progress-step active">
+                                <div class="step-icon"><i class="fas fa-truck"></i></div>
+                                <div class="step-info">
+                                    <h5>Dalam Pengiriman</h5>
+                                    <p>21 Jan 2025, 09:15</p>
+                                </div>
+                            </div>
+                            <div class="progress-step">
+                                <div class="step-icon"><i class="fas fa-home"></i></div>
+                                <div class="step-info">
+                                    <h5>Sampai Tujuan</h5>
+                                    <p>Estimasi: 22 Jan 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-eye"></i>
+                            Lihat Detail
+                        </button>
+                        <button class="btn btn-outline">
+                            <i class="fas fa-truck"></i>
+                            Lacak Paket
+                        </button>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-phone"></i>
+                            Hubungi Penjual
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Order 2 - Processing -->
+                <div class="order-card" data-status="processing" data-order="GS-002-2025">
+                    <div class="order-header">
+                        <div class="order-info">
+                            <h3><i class="fas fa-receipt"></i> Order #GS-002-2025</h3>
+                            <div class="order-meta">
+                                <span class="order-date">
+                                    <i class="fas fa-calendar"></i>
+                                    21 Januari 2025
+                                </span>
+                                <span class="order-status processing">
+                                    <i class="fas fa-cog fa-spin"></i>
+                                    Sedang Diproses
+                                </span>
+                            </div>
+                        </div>
+                        <div class="order-total">
+                            <span class="total-label">Total</span>
+                            <span class="total-amount">Rp 1.800.000</span>
+                        </div>
+                    </div>
+
+                    <div class="order-items">
+                        <div class="order-item">
+                            <img src="https://pixabay.com/get/g6784b0562f857b044da30cc39156a22c79fcbc84a476c97fcfb41cf39010e2d6cad21ef5330b2b84d7f0afcfedd800a651c9db50ed794b19a4c63a16025ecffc_1280.jpg" alt="Gaming Chair" loading="lazy">
+                            <div class="item-details">
+                                <h4>Fantech GC-185 Kursi Gaming</h4>
+                                <p>Qty: 1 × Rp 1.800.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="processing-info">
+                        <div class="processing-message">
+                            <i class="fas fa-info-circle"></i>
+                            <div>
+                                <h4>Pesanan Sedang Diproses</h4>
+                                <p>Tim kami sedang mempersiapkan pesanan Anda. Estimasi selesai dalam 1-2 hari kerja.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-eye"></i>
+                            Lihat Detail
+                        </button>
+                        <button class="btn btn-outline cancel-btn">
+                            <i class="fas fa-times"></i>
+                            Batalkan Pesanan
+                        </button>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-phone"></i>
+                            Hubungi Penjual
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Order 3 - Delivered -->
+                <div class="order-card" data-status="delivered" data-order="GS-003-2025">
+                    <div class="order-header">
+                        <div class="order-info">
+                            <h3><i class="fas fa-receipt"></i> Order #GS-003-2025</h3>
+                            <div class="order-meta">
+                                <span class="order-date">
+                                    <i class="fas fa-calendar"></i>
+                                    15 Januari 2025
+                                </span>
+                                <span class="order-status delivered">
+                                    <i class="fas fa-check-circle"></i>
+                                    Pesanan Selesai
+                                </span>
+                            </div>
+                        </div>
+                        <div class="order-total">
+                            <span class="total-label">Total</span>
+                            <span class="total-amount">Rp 14.500.000</span>
+                        </div>
+                    </div>
+
+                    <div class="order-items">
+                        <div class="order-item">
+                            <img src="https://pixabay.com/get/g0ea5057d050d07737efe32347147c045597dd71146afc98629d3bfecc1776380a4459fafe9198044b0b3db6c0df4c414ea2185b23aeb94b3c431ab4b7b39e213_1280.jpg" alt="Gaming Laptop" loading="lazy">
+                            <div class="item-details">
+                                <h4>Digital Alliance T-Force RTX Gaming Laptop</h4>
+                                <p>Qty: 1 × Rp 14.500.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="delivered-info">
+                        <div class="delivery-confirmation">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Pesanan Telah Diterima</h4>
+                                <p>Diterima pada 18 Januari 2025, 14:30 oleh Bapak Banyu</p>
+                            </div>
+                        </div>
+                        <div class="rating-section">
+                            <h5>Berikan Rating & Ulasan</h5>
+                            <div class="rating-stars">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-eye"></i>
+                            Lihat Detail
+                        </button>
+                        <button class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Unduh Invoice
+                        </button>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-redo"></i>
+                            Beli Lagi
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>GamingStore</span>
+                    </div>
+                    <p>Destinasi utama untuk semua kebutuhan gaming Anda. Kualitas premium, harga terjangkau.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Produk</h3>
+                    <ul>
+                        <li><a href="#">Gaming PC</a></li>
+                        <li><a href="#">Keyboard</a></li>
+                        <li><a href="#">Mouse</a></li>
+                        <li><a href="#">Headset</a></li>
+                        <li><a href="#">Kursi Gaming</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="#">Bantuan</a></li>
+                        <li><a href="#">Garansi</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Pembayaran</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> banyu_pangestu@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +62 813 3779 9775</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Bali, Tabanan, kec.seltim </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GamingStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Order filter functionality
+        document.querySelectorAll('.filter-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs
+                document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                this.classList.add('active');
+                
+                const status = this.dataset.status;
+                const orders = document.querySelectorAll('.order-card');
+                
+                orders.forEach(order => {
+                    if (status === 'all' || order.dataset.status === status) {
+                        order.style.display = 'block';
+                    } else {
+                        order.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Order search functionality
+        document.getElementById('orderSearch').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const orders = document.querySelectorAll('.order-card');
+            
+            orders.forEach(order => {
+                const orderNumber = order.dataset.order.toLowerCase();
+                const orderContent = order.textContent.toLowerCase();
+                
+                if (orderNumber.includes(searchTerm) || orderContent.includes(searchTerm)) {
+                    order.style.display = 'block';
+                } else {
+                    order.style.display = 'none';
+                }
+            });
+        });
+
+        // Rating functionality
+        document.querySelectorAll('.rating-stars').forEach(ratingContainer => {
+            const stars = ratingContainer.querySelectorAll('.fas.fa-star');
+            
+            stars.forEach((star, index) => {
+                star.addEventListener('click', function() {
+                    const rating = index + 1;
+                    
+                    // Reset all stars
+                    stars.forEach(s => s.classList.remove('active'));
+                    
+                    // Highlight stars up to clicked rating
+                    for (let i = 0; i <= index; i++) {
+                        stars[i].classList.add('active');
+                    }
+                    
+                    console.log('Rating given:', rating);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
